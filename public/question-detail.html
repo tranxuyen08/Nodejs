@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  nav {
+    background-color: #222222;
+    padding: 5px 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .main-content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .question-content{
+    display: flex;
+    margin: 20px auto;
+    color: #222222;
+  }
+  #btn{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #59C054;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .vote{
+    margin: 0 auto;
+  }
+  .rate-bar{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+  }
+  .dislike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #E94441;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .like{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    color: white;
+    background-color: #2677BD;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<body>
+  <nav>
+    <ul>
+      <li class="logo"><a href="#">Hỏi.MịeĐê!</a></li>
+      <li><a href="/ask">Hỏi nhanh</a></li>
+      <li><a href="/">Đáp gọn</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="main-content">
+    <div class="question-content">
+      Something
+    </div>
+    <div class="vote">
+      <span class="vote-number">6</span> vote
+    </div>
+    <div class="rate-bar">
+      <div class="dislike">40%</div>
+      <div class="like">60%</div>
+    </div>
+    <div class="btn">
+      <button id="btn">Xem câu hỏi khác</button>
+    </div>
+  </div>
+</body>
+
+</html>

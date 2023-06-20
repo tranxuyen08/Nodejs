@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <h1>Add Product</h1>
+    <form action="api/v1/users/create" method="POST">
+      <label for="name">Content:</label>
+      <input type="text" id="name" name="content" required/>
+      </br>
+      <label for="email">Like:</label>
+      <input type="email" id="email" name="like" required/>
+    </br>
+      <label for="active">Dislike:</label>
+      <input type="checkbox" id="active" name="dislike" value="true"/>
+    </br>
+      <input type="submit" value="Add Product"/>
+    </form>
+</body>
+</html>
